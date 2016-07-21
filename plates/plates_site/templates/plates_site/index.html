@@ -1,8 +1,22 @@
 <!DOCTYPE html>
 <html>
-{% include "plates_site/head.html" %}
+<head>
+  {% include "plates_site/head.html" %}
+  {% load static %}
+  <link href="{% static "plates_site/index.css" %}" rel="stylesheet">
+<head>
 <body>
   {% include "plates_site/navbar.html" %}
-  
+  <div class="container">
+    <div class="jumbotron">
+      <div class="flex-center-column">
+        <h1>Plates</h1>
+        <p>Want to tell the idiot who just cut you off how terrible they are at driving? Anonymously tell your neighbor to stop parking on the sidewalk? Now you can!</p>
+        <p>Search for other drivers by license plate, comment on them, and see what vitriol others have aimed at them!</p>
+        <br>
+        <a href="/search" type="button" class="btn btn-lg btn-primary">Start here!</a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

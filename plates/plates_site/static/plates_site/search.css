@@ -1,0 +1,17 @@
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#searchbox {
+  width: 500px;
+  height: 200px;
+  color: #05f;
+  font-size: 100px;
+  text-align:center;
+}
+
+#location {
+  width: 300px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% include "plates_site/head.html" %}
+  {% load static %}
+  <link href="{% static "plates_site/search.css" %}" rel="stylesheet">
+<head>
+
+<body>
+  {% include "plates_site/navbar.html" %}
+  <div class="container">
+      <form role="form">
+        <div class="flex-center-column">
+          <h1>Enter license:</h1>
+          <input id="searchbox" type="text" placeholder="1ABC234">
+          <br>
+          <h3>Select location:</h3>
+          <select class="form-control" id="location">
+            {% include "plates_site/locations_select.html" %}
+          </select>
+          <br><br>
+          <button type="submit" class="btn btn-lg btn-primary">Search</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
