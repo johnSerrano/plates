@@ -1,5 +1,5 @@
 def generic_check(license):
-    if len(license) > 8:
+    if len(license) > 8 or len(license) < 1:
         raise Exception("Bad license")
 
 class location:

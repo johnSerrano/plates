@@ -34,7 +34,7 @@ def plate(request):
     if not found:
         return render(request, "plates_site/search.html", {
             "err": True,
-            "msg": "Location not valid: the location \""+location+"\" was not found."
+            "msg": "Location not valid: the location \""+place+"\" was not found."
         })
 
     return render(request, "plates_site/plate.html", {
