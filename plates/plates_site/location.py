@@ -1,5 +1,4 @@
 def generic_check(license):
-    license = [i for i in license if i.lower() in 'abcdefghijklmnopqrstuvwxyz1234567890']
     if len(license) > 8:
         raise Exception("Bad license")
 

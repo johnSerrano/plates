@@ -15,6 +15,7 @@ def plate(request):
     # get parameters: license, location
     license = request.GET.get('license', '')
     place = request.GET.get('location', '')
+    license = "".join([i.upper() for i in license if i.lower() in 'abcdefghijklmnopqrstuvwxyz1234567890'])
 
     # check location is valid
     found = False
@@ -28,6 +29,7 @@ def plate(request):
                     "err": True,
                     "msg": "License not valid: the license \""+license+"\" is not valid in "+place+"."
                 })
+            break
 
     if not found:
         return render(request, "plates_site/search.html", {

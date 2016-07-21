@@ -1,0 +1,35 @@
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-spacetween-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.spacer {
+  height: 30px;
+}
+
+.socialbutton {
+  margin: 5px;
+}
+
+#location {
+  font-size: 30px;
+  color: #f02;
+}
+
+#license {
+  color: #20f;
+  font-size: 50px;
+}
+
+#plate {
+  border-radius: 10px;
+  border: 5px solid #999;
+  padding: 10px;
+}

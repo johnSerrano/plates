@@ -10,9 +10,13 @@
 <body>
   {% include "plates_site/navbar.html" %}
   <div class="container">
-    <h1>You searched for:</h1>
-    <h3>License: {{ license }}</h3>
-    <h3>Location: {{ location }}</h3>
+    <div class="flex-center-column">
+      <div class="spacer"></div>
+      <div id="plate" class="flex-center-column">
+        <div id="location">{{ location }}</div>
+        <div id="license">{{ license }}</div>
+      </div>
+    </div>
   </div>
 </body>
 
