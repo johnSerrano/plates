@@ -12,6 +12,11 @@
   <div class="container">
       <form role="form" method="get" action="/plate">
         <div class="flex-center-column">
+          {% if err %}
+          <div class="alert alert-danger">
+            <strong>ERROR:</strong> {{ msg }}
+          </div>
+          {% endif %}
           <h1>Enter license:</h1>
           <input id="searchbox" name="license" type="text" placeholder="1ABC234">
           <br>
