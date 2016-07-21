@@ -10,13 +10,13 @@
 <body>
   {% include "plates_site/navbar.html" %}
   <div class="container">
-      <form role="form">
+      <form role="form" method="get" action="/plate">
         <div class="flex-center-column">
           <h1>Enter license:</h1>
-          <input id="searchbox" type="text" placeholder="1ABC234">
+          <input id="searchbox" name="license" type="text" placeholder="1ABC234">
           <br>
           <h3>Select location:</h3>
-          <select class="form-control" id="location">
+          <select class="form-control" name="location" id="location">
             {% include "plates_site/locations_select.html" %}
           </select>
           <br><br>

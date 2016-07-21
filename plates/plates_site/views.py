@@ -6,3 +6,12 @@ def index(request):
 
 def search(request):
 	return render(request, "plates_site/search.html")
+
+def plate(request):
+	# get parameters: license, location
+	license = request.GET.get('license', '')
+	location = request.GET.get('location', '')
+	return render(request, "plates_site/plate.html", {
+		"location": location,
+		"license": license,
+	})

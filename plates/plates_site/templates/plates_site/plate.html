@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% include "plates_site/head.html" %}
+  {% load static %}
+  <link href="{% static "plates_site/plate.css" %}" rel="stylesheet">
+<head>
+
+<body>
+  {% include "plates_site/navbar.html" %}
+  <div class="container">
+    <h1>You searched for:</h1>
+    <h3>License: {{ license }}</h3>
+    <h3>Location: {{ location }}</h3>
+  </div>
+</body>
+
+</html>
