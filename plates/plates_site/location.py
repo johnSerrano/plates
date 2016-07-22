@@ -314,6 +314,86 @@ class Wyoming(location):
     def check_license(license):
         generic_check(license)
 
+#CANADA
+
+class Alberta(location):
+    location="Alberta"
+    @staticmethod
+    def check_license(license):
+        generic_check(license)
+
+class British_Colombia(location):
+    location="British Colombia"
+    @staticmethod
+    def check_license(license):
+        generic_check(license)
+
+class Manitoba(location):
+    location="Manitoba"
+    @staticmethod
+    def check_license(license):
+        generic_check(license)
+
+class New_Brunswick(location):
+    location="New Brunswick"
+    @staticmethod
+    def check_license(license):
+        generic_check(license)
+
+class Newfoundland_and_Labrador(location):
+    location="Newfoundland and Labrador"
+    @staticmethod
+    def check_license(license):
+        generic_check(license)
+
+class Nova_Scotia(location):
+    location="Nova Scotia"
+    @staticmethod
+    def check_license(license):
+        generic_check(license)
+
+class Northwest_Territories(location):
+    location="Northwest Territories"
+    @staticmethod
+    def check_license(license):
+        generic_check(license)
+
+class Nunavut(location):
+    location="Nunavut"
+    @staticmethod
+    def check_license(license):
+        generic_check(license)
+
+class Ontario(location):
+    location="Ontario"
+    @staticmethod
+    def check_license(license):
+        generic_check(license)
+
+class Prince_Edward_Island(location):
+    location="Prince Edward Island"
+    @staticmethod
+    def check_license(license):
+        generic_check(license)
+
+class Quebec(location):
+    location="Quebec"
+    @staticmethod
+    def check_license(license):
+        generic_check(license)
+
+class Saskatchewan(location):
+    location="Saskatchewan"
+    @staticmethod
+    def check_license(license):
+        generic_check(license)
+
+class Yukon_Territory(location):
+    location="Yukon Territory"
+    @staticmethod
+    def check_license(license):
+        generic_check(license)
+
 locations=[
     Alabama,
     Alaska,
@@ -366,4 +446,19 @@ locations=[
     West_Virginia,
     Wisconsin,
     Wyoming,
+
+    #canada
+    Alberta,
+    British_Colombia,
+    Manitoba,
+    New_Brunswick,
+    Newfoundland_and_Labrador,
+    Nova_Scotia,
+    Northwest_Territories,
+    Nunavut,
+    Ontario,
+    Prince_Edward_Island,
+    Quebec,
+    Saskatchewan,
+    Yukon_Territory,
 ]
